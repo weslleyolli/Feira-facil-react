@@ -2,50 +2,20 @@ import Image from 'next/image'
 import feiraLogo from '../assets/logoIcon.svg'
 import ballOne from '../assets/ballOne.svg'
 import ballTwo from '../assets/ballTwo.svg'
+import { SignUp } from '@/components/SignUp'
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <Image src={feiraLogo} alt="Logo"/>
+      <div className='absolute top-0 left-0 mx-[10px] my-8'>
+        <Image className='h-[130px]' src={feiraLogo} alt="Logo"/>
     </div>
-    <div >
-        <Image src={ballOne} alt="Bola verde"/>
+    <div className='absolute top-0 right-0'>
+        <Image className='max-w-xl' src={ballOne} alt="Bola verde"/>
     </div>
-    <div >
-        <div>
-            <p>Login</p>
-        </div>
-        <div>
-            <div>
-                <p>Email</p>
-                <input id="username" type="email" placeholder="email@email.com"/>
-            </div>
-            <div>
-                <div>
-                    <input id="password" type="password" placeholder="***************"/>
-                </div>
-                <div>
-                    <button id="forget"> <a href=""> Esqueceu a senha? </a></button>
-                </div>
-            </div>
-        </div>
-        <div>
-            <button id="enter">
-                <a href="">
-                    <p>Entrar</p>
-                </a>
-            </button>
-
-            <button id="register">
-                <a href="">
-                    <p>Cadastre-se</p>
-                </a>
-            </button>
-        </div>
-    </div>
+    <SignUp />
     <div>
-        <Image src={ballTwo} alt="Bola verde"/>
+        <Image className='max-w-3xl absolute bottom-0 left-0 -z-10' src={ballTwo} alt="Bola verde"/>
     </div>
     </div>
   )
