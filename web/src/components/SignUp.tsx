@@ -1,3 +1,5 @@
+import React from 'react'
+
 export function SignUp() {
     return (
         <div className="h-screen flex items-center justify-center" >
@@ -8,12 +10,22 @@ export function SignUp() {
                 <div className="w-full mt-7 flex flex-col gap-3">
                     <div>
                         <p className="pl-1 text-lg">E-mail:</p>
-                        <input className="w-full rounded-md border border-gray-300 text-gray-300 underline pl-1" id="username" type="email" placeholder="email@email.com"/>
+                        <input 
+                            className="w-full h-8 rounded-md border border-gray-300 text-black pl-1" 
+                            id="email" 
+                            type="email" 
+                            placeholder="email@email.com"
+                        />
                     </div>
                     <div>
                         <div>
                             <p className="pl-1 text-lg">Senha</p>
-                            <input className="w-full rounded-md border border-gray-300 text-gray-300 pl-1" id="password" type="password" placeholder="***************"/>
+                            <input 
+                                className="w-full h-8 rounded-md border border-gray-300 text-black pl-1" 
+                                id="password" 
+                                type="password"
+                                placeholder="**********"
+                            />
                         </div>
                         <div className="text-right mt-2">
                             <button className="text-green150" id="forget"> <a href=""> Esqueceu a senha? </a></button>
@@ -21,7 +33,7 @@ export function SignUp() {
                     </div>
                 </div>
                 <div className="w-full flex justify-between px-2 mt-7 h-10 gap-5">
-                    <button className="bg-green150 text-white w-2/3 rounded-md" id="enter">
+                    <button className="bg-green150 text-white w-2/3 rounded-md" id="submitBtn ">
                         <a href="">
                             <p>Entrar</p>
                         </a>
@@ -33,7 +45,9 @@ export function SignUp() {
                         </a>
                     </button>
                 </div>
+                <div id="errorContainer"></div>
             </div>
         </div>
     )
 }
+

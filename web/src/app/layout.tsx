@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import './globals.css'
 import { Roboto_Flex as Roboto } from 'next/font/google'
+import './globals.css'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto'})
 
