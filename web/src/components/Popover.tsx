@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from 'react';
 import { useEffect } from 'react';
 
 import settings from '../assets/popover/settings.svg'
@@ -10,16 +11,21 @@ export default function Popover() {
     const buttonUser = document.getElementById('button-user');
     const popover = document.getElementById('popover');
 
-    buttonUser.addEventListener('click', () => {
-      if (popover.classList.contains('invisible')) {
-        popover.classList.remove('invisible');
-      } else {
-        popover.classList.add('invisible');
-      }
-    });
+    if (buttonUser && popover) {
+      buttonUser.addEventListener('click', () => {
+        if (popover.classList.contains('invisible')) {
+          popover.classList.remove('invisible');
+        } else {
+          popover.classList.add('invisible');
+        }
+      });
+    }
   }, []);
   return (
-    <div className="invisible bg-white text-2xl border shadow-sm p-[20px] pr-[40px] pb-[20px] pl-[15px] rounded-md font-normal absolute right-36 top-[4.25rem] flex flex-col gap-10" id='popover'>
+    <div 
+      className="invisible bg-white text-2xl border shadow-sm p-[20px] pr-[40px] pb-[20px] pl-[15px] rounded-md font-normal absolute right-36 top-[4.25rem] flex flex-col gap-10" 
+      id='popover'
+    >
       <div>
         <p>Olá, José Eduardo</p>
         <div className='h-[2px] w-full bg-gray-100' id="line"></div>
