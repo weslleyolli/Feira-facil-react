@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 import 'tailwindcss/tailwind.css';
 
 import logoFF from '../assets/categories/logoFF.svg'
@@ -19,24 +21,26 @@ import vestuario from '../assets/categories/vestuario.svg'
 import alimentacao from '../assets/categories/alimentacao.svg'
 import servicos from '../assets/categories/servicos.svg'
 import mercearia from '../assets/categories/mercearia.svg'
+import Header from '@/components/Header';
 
 
 
 export default function Categories() {
     return (
         <div>
-            <Header />
+            <Header/>
             <div className='pt-6 h-4/5 flex flex-col items-center gap-10'>
                 <div>
                     <h1 className='text-green150 text-5xl font-bold'>Categorias</h1>
                 </div>
                 <div className="h-auto w-3/5 flex flex-wrap">
-                    <CategoriesIcon image={hortifruits} alt="Maçã" name='hortifrutas' />
-                    <CategoriesIcon image={pets} alt="Pata de cachorro" name='Pets'/>
+                
+                    <CategoriesIcon image={hortifruits} alt="Maçã" name='hortifrutas'/>
+                    <CategoriesIcon image={pets} alt="Pata de cachorro" name='Pets' />
                     <CategoriesIcon image={bebidas} alt="Garrafa" name='Bebidas' />
                     <CategoriesIcon image={acougue} alt="Carne" name='Açougue' />
                     <CategoriesIcon image={laticinios} alt="Fatia de queijo" name='Laticinios' />
-                    <CategoriesIcon image={variedades} alt="Dois balões" name='Variedades' />
+                    <CategoriesIcon image={variedades} alt="Dois balões" name='Variedades' href=''/>
                     <CategoriesIcon image={temperos} alt="Tempeiro sendo jogado na panela" name='Tempeiros' />
                     <CategoriesIcon image={descartaveis} alt="Duas sacolas de papel" name='Descartáveis' />
                     <CategoriesIcon image={vestuario} alt="Uma blusa feminina" name='Vestuário' />

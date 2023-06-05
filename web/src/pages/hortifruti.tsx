@@ -1,6 +1,6 @@
 import Image from "next/image"
 import 'tailwindcss/tailwind.css';
-
+import Link from 'next/link'
 
 import banca1 from "../assets/hortifruti/banca1.svg"
 
@@ -14,11 +14,8 @@ import banca5 from "../assets/hortifruti/banca5.svg"
 
 import banca6 from "../assets/hortifruti/banca6.svg"
 
-
-import categoriaAvaliação from "../assets/hortifruti/categoria-avaliação.svg"
-
-
-import categoriaAvaliação2 from "../assets/hortifruti/categoria-avaliação2.svg"
+import categoriaAvaliação from "../assets/hortifruti/categoria-avaliacao2.svg"
+import categoriaAvaliação2 from "../assets/hortifruti/categoria-avaliacao3.svg"
 import categoriaAvaliação3 from "../assets/hortifruti/categoria-avaliação3.svg"
 import hortiIcon from "../assets/hortifruti/horti-Icon.svg"
 import logoFF from "../assets/categories/logoFF.svg"
@@ -87,6 +84,13 @@ export default function Hortifruti (){
                 <div className="banca">
                     <div className="banca-info"></div>
                     <Image className="bancaimg5" src={banca5} alt="banca5"/>
+                    <span className="bancanome"> Toim do Coentro</span>
+                    <span className="localizacao6">R.Dep. José Taváres, 655</span>
+                    <Image className="cate-avaliacao5" src={categoriaAvaliação2} alt="banca1" />
+                </div>
+                <div className="banca">
+                    <div className="banca-info"></div>
+                    <Image className="bancaimg5" src={banca6} alt="banca6"/>
                     <span className="bancanome"> Toim do Coentro</span>
                     <span className="localizacao6">R.Dep. José Taváres, 655</span>
                     <Image className="cate-avaliacao5" src={categoriaAvaliação2} alt="banca1" />
