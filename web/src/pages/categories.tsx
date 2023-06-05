@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import 'tailwindcss/tailwind.css';
 
-import logoFF from '../assets/categories/logoFF.svg'
+import logoFF from '/assets/categories/logoFF.svg'
 import lupa from '../assets/categories/lupa.svg'
 import user from '../assets/categories/user.svg'
 import message from '../assets/categories/message.svg'
