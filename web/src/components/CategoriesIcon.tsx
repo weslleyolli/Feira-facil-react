@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
+
 import PropTypes from 'prop-types';
-import Link from 'next/link';
+
 
 interface CategoriesIconProps {
   image: string;
@@ -14,7 +14,7 @@ const CategoriesIcon: React.FC<CategoriesIconProps> = ({ image, alt, name}) => {
     <a href='' className="w-1/4 flex flex-col items-center justify-between p-5">
       <Image className="max-w-[50%]" src={image} alt={alt} />
       <p className="text-green150 text-2xl">{name}</p>
-    </Link>
+    </a>
   );
 };
 

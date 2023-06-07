@@ -2,6 +2,7 @@ import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 
 import ProfileBanca from '../assets/banca/bancaProfile/ProfileBanca.png';
+
 import hortifrutas from '../assets/banca/Hortifrutas.svg';
 import acougue from '../assets/categories/acougue.svg';
 import temperos from '../assets/categories/temperos.svg';
