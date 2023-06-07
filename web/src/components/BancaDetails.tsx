@@ -11,7 +11,7 @@ const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
   };
 
   return (
-    <div className="banca relative w-90vw h-196px flex items-center mx-20 mt-10">
+    <div className="banca relative w-90vw h-196px flex items-center mx-28 mt-10">
         <Image src={photo} alt={description} id="ProfileBanca" width={140} height={140} />
 
         <h2 className="relative w-200px h-35px top-33 left-3 font-roboto font-normal text-xl text-black">
