@@ -28,7 +28,7 @@ export default function Hortifruti() {
   <Image src={hortiIcon} alt="icone-hortifruti" />
     </div>
 <main className=" flex items-center align-middle justify-center">
-<div className="bancasSection grid grid-cols-2 gap-4 flex items-center align-middle">
+<div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
   <a className="banca border-2 w-fit border-green150 rounded-md shadow-sm transform hover:shadow-xl p-2 cursor-pointer flex items-center mx-4" href="bancaAntonio">
     <Image className="bancaImg" src={banca1} alt="banca1" />
     <div className="ml-2 p-5">
