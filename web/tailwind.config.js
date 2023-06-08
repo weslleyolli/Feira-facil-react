@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'var(--font-roboto)',
+        sans: ['var(--font-roboto)'],
+        'Fredoka': ["Fredoka","sans-serif"],
       },
       colors:{
         green150: '#00AA95',

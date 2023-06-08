@@ -35,7 +35,7 @@ export default function Categories() {
                 </div>
                 <div className="h-auto w-3/5 flex flex-wrap">
                 
-                    <CategoriesIcon image={hortifruits} alt="Maçã" name='hortifrutas'/>
+                    <CategoriesIcon image={hortifruits} alt="Maçã" name='Hortifrutas'/>
                     <CategoriesIcon image={pets} alt="Pata de cachorro" name='Pets' />
                     <CategoriesIcon image={bebidas} alt="Garrafa" name='Bebidas' />
                     <CategoriesIcon image={acougue} alt="Carne" name='Açougue' />
