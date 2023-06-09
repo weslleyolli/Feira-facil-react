@@ -32,9 +32,9 @@ export default function Popover() {
       </div>
       <button className="flex items-center gap-4 text-xl">
         <Image src={settings} alt="engrenagem" />
-        <a href="">
+        <Link href="/dataReset">
           <p>Meus dados</p>
-        </a>
+        </Link>
       </button>
       <button className="flex items-center gap-4 text-xl ">
         <Image src={exit} alt="porta com seta" />
