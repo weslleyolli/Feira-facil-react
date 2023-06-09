@@ -1,7 +1,25 @@
+'use client'
+import React, { useState } from 'react';
 import Link from 'next/link'
-import React from 'react'
+import { useRouter } from 'next/router';
+
+const validUsername = "user123";
+const validPassword = "password123";
+
 
 export function SignUp() {
+    const [loginMessage, setLoginMessage] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+  
+    function handleLogin() {
+      if (username === validUsername && password === validPassword) {
+        alert("Login successful!")
+      } else {
+        alert("Credenciais inválidas. Por favor, tente novamente.")
+      }
+    }
+
     return (
         <div className="h-screen flex items-center justify-center" >
             <div className="h-3/5 w-1/3 shadow-2xl rounded-xl px-16 bg-white z-10 flex flex-col items-center justify-between pt-8">
@@ -14,8 +32,10 @@ export function SignUp() {
                         <input
                             className="w-full h-8 rounded-md border border-gray-300 text-black pl-1"
                             id="email"
+                            value={username}
                             type="email"
                             placeholder="email@email.com"
+                            onChange={(e) => setUsername(e.target.value)}
                         />
                     </div>
                     <div>
@@ -24,8 +44,10 @@ export function SignUp() {
                             <input
                                 className="w-full h-8 rounded-md border border-gray-300 text-black pl-1"
                                 id="password"
+                                value={password}
                                 type="password"
                                 placeholder="**********"
+                                onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
                         <div className="text-right mt-2">
@@ -34,8 +56,8 @@ export function SignUp() {
                     </div>
                 </div>
                 <div className="w-full flex justify-between px-2 mt-10 h-10 gap-5">
-                    <Link href="/categories" className=" bg-green150 text-white w-2/3 rounded-md text-center flex justify-center">
-                        <button>
+                    <Link href="/categories" className="bg-green150 text-white w-2/3 rounded-md text-center flex justify-center">
+                        <button onClick={handleLogin}>
                             <p className='font-Fredoka'>Entrar</p>
                         </button>
                     </Link>
@@ -46,7 +68,7 @@ export function SignUp() {
                         </a>
                     </button>
                 </div>
-                <div id="errorContainer"></div>
+                <div>{loginMessage}</div>
             </div>
         </div>
     )
