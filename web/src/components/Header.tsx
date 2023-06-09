@@ -13,12 +13,12 @@ export default function Header() {
             <div className="flex items-center gap-6">
                 <div>
                     <a href='categories'>
-                    <Image src={logoFF} alt="Logo Feira" className="max-w-[70%] h-auto ml-3" />
+                        <Image src={logoFF} alt="Logo Feira" className="max-w-[70%] h-auto ml-3" />
                     </a>
                                     </div>
                 <div className="w-[350px] bg-white p-2 flex items-center gap-[10px] rounded-xl">
                     <Image className="max-w-[70%] h-8" src={lupa} alt="Lupa pesquisa" />
-                    <input className="bg-transparent border-none text-xl active:border-none" type="text" placeholder="Busque por um item ou loja" />
+                    <input className="w-full bg-transparent font-Fredoka font-normal border-none text-xl active:border-none" type="text" placeholder="Busque por um item ou loja" />
                 </div>
             </div>
             <div className="flex gap-10 mr-10">

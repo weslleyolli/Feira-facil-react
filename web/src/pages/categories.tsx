@@ -31,7 +31,7 @@ export default function Categories() {
             <Header/>
             <div className='pt-6 h-4/5 flex flex-col items-center gap-10'>
                 <div>
-                    <h1 className='text-green150 text-5xl font-bold'>Categorias</h1>
+                    <h1 className='text-green150 text-6xl font-Fredoka font-bold'>Categorias</h1>
                 </div>
                 <div className="h-auto w-3/5 flex flex-wrap">
                 

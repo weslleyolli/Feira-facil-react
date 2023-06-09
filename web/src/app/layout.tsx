@@ -1,9 +1,10 @@
 import { ReactNode } from 'react'
-import { Fredoka, Roboto_Flex as Roboto } from 'next/font/google'
+import { Fredoka, Baloo_Thambi_2, Roboto_Flex as Roboto } from 'next/font/google'
 import './globals.css'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto'})
 const fredoka =Fredoka({ subsets: ['latin'], variable: '--font-fredoka'})
+const BalooThambi2 = Baloo_Thambi_2({ subsets: ['latin'], variable: '--font-baloo' })
 
 export const metadata = {
   title: 'Feira Facil',

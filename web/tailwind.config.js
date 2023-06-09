@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-roboto)'],
         'Fredoka': ["Fredoka","sans-serif"],
+        'Baloo': ['var(--font-baloo)'],
       },
       colors:{
         green150: '#00AA95',

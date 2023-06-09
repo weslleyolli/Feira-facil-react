@@ -14,7 +14,7 @@ const CategoriesIcon: React.FC<CategoriesIconProps> = ({ image, alt, name}) => {
   return (
     <Link href='/hortifruti' className="w-1/4 flex flex-col items-center justify-between p-5">
       <Image className="max-w-[50%]" src={image} alt={alt} />
-      <p className="text-green150 text-2xl">{name}</p>
+      <p className="text-green150 font-Fredoka text-2xl">{name}</p>
     </Link>
   );
 };
