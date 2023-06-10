@@ -14,7 +14,7 @@ export default function Home() {
       <div className='absolute top-0 right-0'>
         <Image className='max-w-xl' src={ballOne} alt="Bola verde" />
       </div>
-      <SignUp />
+      <SignUp /> 
       <div>
         <Image className='max-w-3xl absolute bottom-0 left-0 -z-10' src={ballTwo} alt="Bola verde" />
       </div>
