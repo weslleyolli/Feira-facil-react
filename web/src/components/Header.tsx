@@ -6,6 +6,7 @@ import lupa from '../assets/header/lupa.svg'
 import user from '../assets/header/user.svg'
 import message from '../assets/header/message.svg'
 import MyPopover from './Popover';
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -26,7 +27,7 @@ export default function Header() {
                     <Image className="max-w-[80%] h-8" src={user} alt="Usuário" />
                 </button>
                 <button>
-                    <a href=""><Image className="max-w-[80%]" src={message} alt="Chat" /></a>
+                    <Link href="/mensagens"><Image className="max-w-[80%]" src={message} alt="Chat" /></Link>
                 </button>
             </div>
             <MyPopover />
