@@ -51,7 +51,7 @@ export function SignUp() {
                             />
                         </div>
                         <div className="text-right mt-2">
-                            <button className="text-green150 font-Fredoka" id="forget"> <a href="/redefinirSenha"> Esqueceu a senha? </a></button>
+                            <button className="text-green150 font-Fredoka" id="forget"> <Link href="/redefinirSenha"> Esqueceu a senha? </Link></button>
                         </div>
                     </div>
                 </div>
@@ -63,9 +63,9 @@ export function SignUp() {
                     </Link>
 
                     <button className="w-2/3" id="register">
-                        <a href="">
+                        <Link href="/register">
                             <p className="text-green150 font-Fredoka">Cadastre-se</p>
-                        </a>
+                        </Link>
                     </button>
                 </div>
                 <div>{loginMessage}</div>

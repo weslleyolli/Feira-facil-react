@@ -1,13 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
-
 import 'tailwindcss/tailwind.css';
 
-import logoFF from '../assets/categories/logoFF.svg'
-import lupa from '../assets/categories/lupa.svg'
-import user from '../assets/categories/user.svg'
-import message from '../assets/categories/message.svg'
-import Head from 'next/head';
 import CategoriesIcon from '@/components/CategoriesIcon';
 import hortifruits from '../assets/categories/hortifruits.svg'
 import pets from '../assets/categories/pets.svg'
