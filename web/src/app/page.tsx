@@ -7,17 +7,17 @@ import { SignUp } from '@/components/SignUp'
 
 export default function Home() {
   return (
-    <div>
-      <div className='absolute top-0 left-0 mx-[10px] my-8'>
-        <Image className='h-[130px]' src={feiraLogo} alt="Logo" />
+    <div className="relative">
+      <div className="absolute top-0 left-0 mx-4 my-8 z-10">
+        <Image className="h-20 sm:h-32 md:h-40" src={feiraLogo} alt="Logo" />
       </div>
-      <div className='absolute top-0 right-0'>
-        <Image className='max-w-xl' src={ballOne} alt="Bola verde" />
+      <div className="absolute top-0 right-0">
+        <Image className="max-w-xs sm:max-w-md md:max-w-lg" src={ballOne} alt="Bola verde" />
       </div>
-      <SignUp /> 
+      <SignUp />
       <div>
-        <Image className='max-w-3xl absolute bottom-0 left-0 -z-10' src={ballTwo} alt="Bola verde" />
+        <Image className="max-w-full sm:max-w-2xl md:max-w-3xl absolute bottom-0 left-0 -z-10" src={ballTwo} alt="Bola verde" />
       </div>
     </div>
-  )
+  );
 }
