@@ -1,12 +1,22 @@
-import React from 'react';
-import Image from 'next/image';
-import { useState } from 'react';
-import LogoStar from '../assets/banca/bancaProfile/LogoStar.svg';
-import LogoClose from '../assets/banca/bancaProfile/LogoClose.svg';
+import React from "react";
+import Image, { StaticImageData } from "next/image";
+import { useState } from "react";
+import LogoStar from "../assets/banca/bancaProfile/LogoStar.svg";
+import LogoClose from "../assets/banca/bancaProfile/LogoClose.svg";
 
+interface BancaProps {
+  photo: StaticImageData;
+  description: string;
+  nomeBanca: string;
+  avaliacaoBanca: number;
+}
 
-
-const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
+const Banca = ({
+  photo,
+  description,
+  nomeBanca,
+  avaliacaoBanca,
+}: BancaProps) => {
   const [mostrarInfo, setMostrarInfo] = useState(false);
 
   const toggleMostrarInfo = () => {
@@ -19,7 +29,13 @@ const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
 
   return (
     <div className="banca relative w-90vw h-196px flex items-center mx-28 mt-10">
-      <Image src={photo} alt={description} id="ProfileBanca" width={140} height={140} />
+      <Image
+        src={photo}
+        alt={description}
+        id="ProfileBanca"
+        width={140}
+        height={140}
+      />
 
       <h2 className="relative w-200px h-35px top-33 left-3 font-roboto font-normal text-xl text-black">
         {nomeBanca || "Banca em construção"}
@@ -54,20 +70,39 @@ const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
                 id="LogoClose"
                 src={LogoClose}
                 alt="Fechar"
-                style={{ cursor: "pointer", marginLeft: "10%", marginTop: "10%" }}
+                style={{
+                  cursor: "pointer",
+                  marginLeft: "10%",
+                  marginTop: "10%",
+                }}
               />
             </div>
             <div className="info-feira">
               <div className="about">
-                <h1 style={{ fontSize: '24px', marginLeft: "8%", marginTop: "5%", color: "#acacac" }}>
+                <h1
+                  style={{
+                    fontSize: "24px",
+                    marginLeft: "8%",
+                    marginTop: "5%",
+                    color: "#acacac",
+                  }}
+                >
                   Sobre
                 </h1>
                 <p style={{ marginLeft: "12%", color: "#000" }}>
-                  Loja de hortifrúti com a maior diversidade <br /> de frutas, verduras e legumes de toda feira <br /> central.
+                  Loja de hortifrúti com a maior diversidade <br /> de frutas,
+                  verduras e legumes de toda feira <br /> central.
                 </p>
               </div>
               <div className="address">
-                <h1 style={{ fontSize: '24px', marginLeft: "8%", marginTop: "5%", color: "#acacac" }}>
+                <h1
+                  style={{
+                    fontSize: "24px",
+                    marginLeft: "8%",
+                    marginTop: "5%",
+                    color: "#acacac",
+                  }}
+                >
                   Endereço
                 </h1>
                 <p style={{ marginLeft: "12%", color: "#000" }}>
@@ -81,36 +116,135 @@ const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
                 </p>
               </div>
               <div className="hours">
-                <h1 style={{ fontSize: '24px', marginLeft: "8%", marginTop: "5%", marginBottom: "2%",  color: "#acacac" }}>
+                <h1
+                  style={{
+                    fontSize: "24px",
+                    marginLeft: "8%",
+                    marginTop: "5%",
+                    marginBottom: "2%",
+                    color: "#acacac",
+                  }}
+                >
                   Horário
                 </h1>
-                <div className="segunda" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "10%", marginBottom: "1%" }}>Segunda-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="segunda"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "10%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Segunda-feira
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="terca" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "14%", marginBottom: "1%" }}>Terça-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="terca"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "14%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Terça-feira
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="quarta" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "12%", marginBottom: "1%" }}>Quarta-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="quarta"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "12%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Quarta-feira
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="quinta" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "12%", marginBottom: "1%" }}>Quinta-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="quinta"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "12%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Quinta-feira
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="sexta" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "14%", marginBottom: "1%" }}>Sexta-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="sexta"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "14%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Sexta-feira
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="sabado" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "19%", marginBottom: "1%" }}>Sábado</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="sabado"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "19%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Sábado
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="domingo" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "16%", marginBottom: "1%" }}>Domingo</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>Não abre</p>
+                <div
+                  className="domingo"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "16%",
+                      marginBottom: "1%",
+                    }}
+                  >
+                    Domingo
+                  </p>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                    Não abre
+                  </p>
                 </div>
               </div>
             </div>

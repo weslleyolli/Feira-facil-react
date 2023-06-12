@@ -10,9 +10,9 @@ import banca6 from "../assets/hortifruti/banca6.svg";
 import categoriaAvaliacao from "../assets/hortifruti/categoria-avaliacao.svg";
 import categoriaAvaliacao2 from "../assets/hortifruti/categoria-avaliacao2.svg";
 import categoriaAvaliacao3 from "../assets/hortifruti/categoria-avaliacao3.svg";
-import hortiIcon from "../assets/hortifruti/hortiIcon.svg"
-import Header from '@/components/Header';
-
+import hortiIcon from "../assets/hortifruti/hortiIcon.svg";
+import Header from "@/components/Header";
+import CategorieItem from "@/components/CategorieItem";
 
 export default function Hortifruti() {
   const [userInfoVisible, setUserInfoVisible] = useState(false);
@@ -23,65 +23,65 @@ export default function Hortifruti() {
 
   return (
     <div className="background">
-    <Header></Header>
-    <div className="flex justify-center items-center">
-  <Image src={hortiIcon} alt="icone-hortifruti" />
-    </div>
-<main className=" flex items-center align-middle justify-center">
-<div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
-  <a className="banca border-2 w-fit border-green150 rounded-md shadow-sm transform hover:shadow-xl p-2 cursor-pointer flex items-center mx-4" href="bancaAntonio">
-    <Image className="bancaImg" src={banca1} alt="banca1" />
-    <div className="ml-2 p-5">
-      <span className="font-extrabold ">Banca do Antônio</span>
-      <span className="text-gray-500 block">R.Dep. José Taváres, 776</span>
-      <Image className="cateAvaliacao1 ml-auto" src={categoriaAvaliacao} alt="categoria-avaliacao1" />
-    </div>
-  </a>
-  <div className="banca border-2 w-fit border-green150  rounded-md shadow-sm transform hover:shadow-xl  cursor-pointer  p-2 flex items-center mx-4">
-    <Image className="bancaImg1" src={banca2} alt="banca2" />
-    <div className="ml-2 p-5">
-      <span className="font-bold">Bandejas do Orlando</span>
-      <span className="text-gray-500 block">R.Dep. José Taváres, 990</span>
-      <Image className="cateAvaliacao2 ml-auto" src={categoriaAvaliacao2} alt="categoria-avaliacao2" />
-    </div>
-  </div>
-  <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl  cursor-pointer flex items-center mx-4">
-    <Image className="bancaImg" src={banca3} alt="banca3" />
-    <div className="ml-2 p-5">
-      <span className="font-bold">Chico da Laranja</span>
-      <span className="text-gray-500 block">R.Dep. José Taváres, 854</span>
-      <Image className="cateAvaliacao3 ml-auto" src={categoriaAvaliacao3} alt="categoria-avaliacao3" />
-    </div>
-  </div>
-  <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl cursor-pointer  flex items-center mx-4">
-    <Image className="bancaImg" src={banca4} alt="banca4" />
-    <div className="ml-2 p-5">
-      <span className="font-bold">Barraca São Luiz</span>
-      <span className="text-gray-500 block">R.Dep. José Taváres, 698</span>
-      <Image className="cateAvaliacao4 ml-auto" src={categoriaAvaliacao} alt="categoria-avaliacao4" />
-    </div>
-  </div>
-  <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl  cursor-pointer flex items-center mx-4">
-    <Image className="bancaImg4" src={banca5} alt="banca5" />
-    <div className="ml-2 p-5">
-      <span className="font-bold">Banca da Suani</span>
-      <span className="text-gray-500 block">R.Dep. José Taváres, 887</span>
-      <Image className="cateAvaliacao ml-auto" src={categoriaAvaliacao3} alt="categoria-avaliacao5" />
-    </div>
-  </div>
-  <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl cursor-pointer  flex items-center mx-4">
-    <Image className="bancaImg5" src={banca6} alt="banca6" />
-    <div className="ml-3 p-5">
-      <span className="font-bold">Toim do Coentro</span>
-      <span className="text-gray-500 block">R.Dep. José Taváres, 655</span>
-      <Image className="cateAvaliacao5 ml-auto" src={categoriaAvaliacao} alt="categoria-avaliacao6" />
-    </div>
-  </div>
-</div>
+      <Header></Header>
+      <div className="flex justify-center items-center">
+        <Image src={hortiIcon} alt="icone-hortifruti" />
+      </div>
+      <main className=" flex items-center align-middle justify-center">
+        <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
+          <a
+            href="bancaAntonio"
+          >
+            <CategorieItem
+              imageSrc={banca1}
+              title="Banca do Antônio"
+              address="R.Dep. José Taváres, 776"
+              categoryImageSrc={categoriaAvaliacao}
+            />
+          </a>
+          
+          <CategorieItem
+            imageSrc={banca2}
+            title="Bandejas do Orlando"
+            address="R.Dep. José Taváres, 990"
+            categoryImageSrc={categoriaAvaliacao2}
+          />
 
+          <CategorieItem
+            imageSrc={banca3}
+            title="Chico da Laranja"
+            address="R.Dep. José Taváres, 854"
+            categoryImageSrc={categoriaAvaliacao3}
+          />
+
+          <CategorieItem
+            imageSrc={banca4}
+            title="Barraca São Luiz"
+            address="R.Dep. José Taváres, 698"
+            categoryImageSrc={categoriaAvaliacao}
+          />
+
+          <CategorieItem
+            imageSrc={banca5}
+            title="Bandejas do Orlando"
+            address="R.Dep. José Taváres, 887"
+            categoryImageSrc={categoriaAvaliacao3}
+          />
+
+          <CategorieItem
+            imageSrc={banca6}
+            title="Toim do Coentro"
+            address="R.Dep. José Taváres, 655"
+            categoryImageSrc={categoriaAvaliacao}
+          />
+          
+        </div>
       </main>
       <div className="container">
-        <div id="UserInfo" style={{ display: userInfoVisible ? "block" : "none" }}>
+        <div
+          id="UserInfo"
+          style={{ display: userInfoVisible ? "block" : "none" }}
+        >
           <h2>Olá, José Eduardo</h2>
           <div className="meusDados">
             <Image className="logoConfig" src={logoFind} alt="Configurações" />
