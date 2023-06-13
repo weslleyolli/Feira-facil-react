@@ -1,6 +1,8 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
+import '../app/globals.css';
+
 import LogoStar from "../assets/banca/bancaProfile/LogoStar.svg";
 import LogoClose from "../assets/banca/bancaProfile/LogoClose.svg";
 
@@ -37,7 +39,7 @@ const Banca = ({
         height={140}
       />
 
-      <h2 className="relative w-200px h-35px top-33 left-3 font-roboto font-normal text-xl text-black">
+      <h2 className="relative w-200px h-35px top-33 left-3 font-freedoka font-normal text-xl text-black">
         {nomeBanca || "Banca em construção"}
       </h2>
 
@@ -50,12 +52,12 @@ const Banca = ({
         className="relative top-50 left-4"
       />
 
-      <p className="relative w-20px h-18px top-43 left-5 font-roboto font-normal text-xs text-teal-500">
+      <p className="relative w-20px h-18px top-43 left-5 font-freedoka font-normal text-xs text-teal-500">
         {avaliacaoBanca || "Banca não avaliada"}
       </p>
 
       <h4
-        className="absolute top-29 right-5 ml-auto font-roboto font-normal text-xl text-teal-500 cursor-pointer hover:underline"
+        className="absolute top-29 right-5 ml-auto font-freedoka font-normal text-lg text-teal-500 cursor-pointer hover:underline"
         onClick={toggleMostrarInfo}
       >
         Ver mais
@@ -86,10 +88,11 @@ const Banca = ({
                     marginTop: "5%",
                     color: "#acacac",
                   }}
+                  className="font-freedoka"
                 >
                   Sobre
                 </h1>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
+                <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
                   Loja de hortifrúti com a maior diversidade <br /> de frutas,
                   verduras e legumes de toda feira <br /> central.
                 </p>
@@ -102,16 +105,17 @@ const Banca = ({
                     marginTop: "5%",
                     color: "#acacac",
                   }}
+                  className="font-freedoka"
                 >
                   Endereço
                 </h1>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
-                  Rua Deputado José Taváres, 766 - Centro
+                <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
+                  Rua Deputado José Tavares, 766 - Centro
                 </p>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
+                <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
                   Campina Grande - PB
                 </p>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
+                <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
                   CEP:58465-554
                 </p>
               </div>
@@ -124,6 +128,7 @@ const Banca = ({
                     marginBottom: "2%",
                     color: "#acacac",
                   }}
+                  className="font-freedoka"
                 >
                   Horário
                 </h1>
@@ -137,10 +142,11 @@ const Banca = ({
                       marginRight: "10%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Segunda-feira
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     7:00 às 15:00
                   </p>
                 </div>
@@ -151,13 +157,14 @@ const Banca = ({
                   <p
                     style={{
                       marginLeft: "15%",
-                      marginRight: "14%",
+                      marginRight: "15%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Terça-feira
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     7:00 às 15:00
                   </p>
                 </div>
@@ -168,13 +175,14 @@ const Banca = ({
                   <p
                     style={{
                       marginLeft: "15%",
-                      marginRight: "12%",
+                      marginRight: "13%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Quarta-feira
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     7:00 às 15:00
                   </p>
                 </div>
@@ -185,13 +193,14 @@ const Banca = ({
                   <p
                     style={{
                       marginLeft: "15%",
-                      marginRight: "12%",
+                      marginRight: "13%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Quinta-feira
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     7:00 às 15:00
                   </p>
                 </div>
@@ -202,13 +211,14 @@ const Banca = ({
                   <p
                     style={{
                       marginLeft: "15%",
-                      marginRight: "14%",
+                      marginRight: "15%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Sexta-feira
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     7:00 às 15:00
                   </p>
                 </div>
@@ -222,10 +232,11 @@ const Banca = ({
                       marginRight: "19%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Sábado
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     7:00 às 15:00
                   </p>
                 </div>
@@ -236,13 +247,14 @@ const Banca = ({
                   <p
                     style={{
                       marginLeft: "15%",
-                      marginRight: "16%",
+                      marginRight: "18%",
                       marginBottom: "1%",
                     }}
+                    className="font-freedoka text-sm"
                   >
                     Domingo
                   </p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>
+                  <p style={{ marginRight: "15%", marginBottom: "1%" }} className="font-freedoka text-sm">
                     Não abre
                   </p>
                 </div>

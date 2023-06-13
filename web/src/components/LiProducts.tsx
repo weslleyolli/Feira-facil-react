@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 import React from 'react';
+import '../app/globals.css';
 
 const LiProducts = (props: any) => {
   return (
@@ -17,17 +18,17 @@ const LiProducts = (props: any) => {
         </div>
 
         <div className="text-center">
-          <h3 id="preco-com-desconto" className="text-teal-500 font-medium text-lg">
+          <h3 id="preco-com-desconto" className="text-teal-500 font-freedoka text-base">
             {props.priceProduct}
           </h3>
-          <span className="desconto-1 bg-teal-500 text-white font-medium text-xs rounded">
+          <span className="desconto-1 bg-teal-500 text-white font-freedoka text-xs rounded">
             {props.spanProduct}
           </span>
-          <span className="preco-sem-desconto text-teal-500 font-medium text-sm">
+          <span className="preco-sem-desconto text-teal-500 font-freedoka text-sm">
             {props.spanProduct2}
           </span>
-          <h5 className="text-gray-600 font-light text-base">{props.nameProduct}</h5>
-          <p className="text-gray-600 font-light text-base">{props.kgProduct || 'Por kg'}</p>
+          <h5 className="text-gray-600 font-freedoka text-base">{props.nameProduct}</h5>
+          <p className="text-gray-600 font-freedoka text-sm">{props.kgProduct || 'Por kg'}</p>
         </div>
       </div>
     </li>

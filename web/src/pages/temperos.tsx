@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-
+import logoFind from "../assets/header/lupa.svg";
 import banca1 from "../assets/hortifruti/banca1.svg";
 import banca2 from "../assets/hortifruti/banca2.svg";
 import banca3 from "../assets/hortifruti/banca3.svg";

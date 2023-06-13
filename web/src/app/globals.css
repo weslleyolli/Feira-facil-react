@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-freedoka {
+    font-family: 'Freedoka', sans-serif;
+}
