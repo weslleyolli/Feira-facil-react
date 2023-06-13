@@ -18,7 +18,7 @@ export default function CategorieItem({ imageSrc, title, address, categoryImageS
         <Image className="bancaImg1" src={imageSrc} alt={title} width={260} height={260} />
         <div className="ml-2 p-5">
           <span className="font-bold font-freedoka">{title}</span>
-          <span className="font-freedoka font-medium text-sm text-gray-500 block">{address}</span>
+          <span className="font-freedoka font-thin text-sm text-gray-500 block">{address}</span>
           <Image className="cateAvaliacao2 ml-auto" src={categoryImageSrc} alt={`categoria-avaliacao-${title}`} />
         </div>
       </Link>
