@@ -1,5 +1,10 @@
 import { useState } from "react";
 import Image from "next/image";
+import '../app/globals.css';
+
+import Header from "@/components/Header";
+import CategorieItem from "@/components/CategorieItem";
+import LogoCategorie from '@/components/LogoCategorie'
 
 import banca1 from "../assets/hortifruti/banca1.svg";
 import banca2 from "../assets/hortifruti/banca2.svg";
@@ -10,36 +15,28 @@ import banca6 from "../assets/hortifruti/banca6.svg";
 import categoriaAvaliacao from "../assets/hortifruti/categoria-avaliacao.svg";
 import categoriaAvaliacao2 from "../assets/hortifruti/categoria-avaliacao2.svg";
 import categoriaAvaliacao3 from "../assets/hortifruti/categoria-avaliacao3.svg";
-import hortiIcon from "../assets/hortifruti/hortiIcon.svg";
-import Header from "@/components/Header";
-import CategorieItem from "@/components/CategorieItem";
-import '../app/globals.css';
+import hortifruits from "../assets/categories/hortifruits.svg";
+
 
 export default function Hortifruti() {
-  const [userInfoVisible, setUserInfoVisible] = useState(false);
-
-  const toggleUserInfo = () => {
-    setUserInfoVisible((prev) => !prev);
-  };
-
   return (
     <div className="background">
       <Header></Header>
-      <div className="flex justify-center items-center">
-        <Image src={hortiIcon} alt="icone-hortifruti" />
-      </div>
+      <LogoCategorie
+        photo={hortifruits}
+        title="Maçã"
+        name="Hortifruti"
+      />
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
-          <a
+
+          <CategorieItem
             href="bancaAntonio"
-          >
-            <CategorieItem
-              imageSrc={banca1}
-              title="Banca do Antônio"
-              address="R.Dep. José Tavares, 776"
-              categoryImageSrc={categoriaAvaliacao}
-            />
-          </a>
+            imageSrc={banca1}
+            title="Banca do Antônio"
+            address="R.Dep. José Tavares, 776"
+            categoryImageSrc={categoriaAvaliacao}
+          />
           
           <CategorieItem
             imageSrc={banca2}
@@ -75,6 +72,8 @@ export default function Hortifruti() {
             address="R.Dep. José Tavares, 655"
             categoryImageSrc={categoriaAvaliacao}
           />
+
+            <div className="h-8"></div>
           
         </div>
       </main>

@@ -1,80 +1,80 @@
-import { useState } from "react";
-import Image from "next/image";
-import logoFind from "../assets/header/lupa.svg";
-import banca1 from "../assets/hortifruti/banca1.svg";
-import banca2 from "../assets/hortifruti/banca2.svg";
-import banca3 from "../assets/hortifruti/banca3.svg";
-import banca4 from "../assets/hortifruti/banca4.svg";
-import banca5 from "../assets/hortifruti/banca5.svg";
-import banca6 from "../assets/hortifruti/banca6.svg";
+// import { useState } from "react";
+// import Image from "next/image";
+import '../app/globals.css';
+
+import BancaDuraes from "../assets/temperos/bancas/BancaDuraes.svg";
+import BancaCarlos from "../assets/temperos/bancas/BancaCarlos.svg";
+import BancaMarcelo from "../assets/temperos/bancas/BancaMarcelo.svg";
+import BancaPedro from "../assets/temperos/bancas/BancaPedro.svg";
+import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.svg";
+import BomTempero from "../assets/temperos/bancas/BomTempero.svg";
+
 import categoriaAvaliacao from "../assets/hortifruti/categoria-avaliacao.svg";
 import categoriaAvaliacao2 from "../assets/hortifruti/categoria-avaliacao2.svg";
 import categoriaAvaliacao3 from "../assets/hortifruti/categoria-avaliacao3.svg";
-import hortiIcon from "../assets/hortifruti/hortiIcon.svg";
+import temperos from "../assets/categories/temperos.svg";
+
 import Header from "@/components/Header";
 import CategorieItem from "@/components/CategorieItem";
-import '../app/globals.css';
+import LogoCategorie from '@/components/LogoCategorie'
 
-export default function Hortifruti() {
-  const [userInfoVisible, setUserInfoVisible] = useState(false);
-
-  const toggleUserInfo = () => {
-    setUserInfoVisible((prev) => !prev);
-  };
-
+export default function Temperos() {
   return (
     <div className="background">
-      <Header></Header>
-      <div className="flex justify-center items-center">
-        <Image src={hortiIcon} alt="icone-hortifruti" />
-      </div>
+      <Header/>
+
+      <LogoCategorie
+      photo={temperos}
+      name="Temperos"
+      title="Tempero sendo jogado na panela"
+      />
+
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
-          <a
-            href="bancaAntonio"
-          >
-            <CategorieItem
-              imageSrc={banca1}
-              title="Banca do Antônio"
-              address="R.Dep. José Tavares, 776"
-              categoryImageSrc={categoriaAvaliacao}
-            />
-          </a>
+
+          <CategorieItem
+            imageSrc={BancaDuraes}
+            title="Tempero Durães"
+            address="R.Dep. José Tavares, 129"
+            categoryImageSrc={categoriaAvaliacao}
+          />
           
           <CategorieItem
-            imageSrc={banca2}
-            title="Bandejas do Orlando"
-            address="R.Dep. José Tavares, 990"
+            imageSrc={BancaCarlos}
+            title="Verdinhas do Carlos"
+            address="R.Dep. José Tavares, 157"
             categoryImageSrc={categoriaAvaliacao2}
           />
 
           <CategorieItem
-            imageSrc={banca3}
-            title="Chico da Laranja"
-            address="R.Dep. José Tavares, 854"
+            imageSrc={BancaMarcelo}
+            title="Marcelo do Cheiro"
+            address="R.Dep. José Tavares, 152"
             categoryImageSrc={categoriaAvaliacao3}
           />
 
           <CategorieItem
-            imageSrc={banca4}
-            title="Barraca São Luiz"
-            address="R.Dep. José Tavares, 698"
+            imageSrc={BancaSLucas}
+            title="Barraca São Lucas"
+            address="R.Dep. José Tavares, 102"
             categoryImageSrc={categoriaAvaliacao}
           />
 
           <CategorieItem
-            imageSrc={banca5}
-            title="Bandejas do Orlando"
-            address="R.Dep. José Tavares, 887"
+            imageSrc={BancaPedro}
+            title="Orgânicos do Pedro"
+            address="R.Dep. José Tavares, 098"
             categoryImageSrc={categoriaAvaliacao3}
           />
 
           <CategorieItem
-            imageSrc={banca6}
-            title="Toim do Coentro"
-            address="R.Dep. José Tavares, 655"
+            imageSrc={BomTempero}
+            title="Bompreço do Tempero"
+            address="R.Dep. José Tavares, 130"
             categoryImageSrc={categoriaAvaliacao}
           />
+
+          <div className="h-8"></div>
           
         </div>
       </main>

@@ -16,8 +16,8 @@ import mercearia from '../assets/categories/mercearia.svg'
 import Header from '@/components/Header';
 
 
-
 export default function Categories() {
+
     return (
         <div>
             <Header/>
@@ -27,13 +27,13 @@ export default function Categories() {
                 </div>
                 <div className="h-auto w-3/5 flex flex-wrap">
                 
-                    <CategoriesIcon image={hortifruits} alt="Maçã" name='Hortifrutas'/>
+                    <CategoriesIcon image={hortifruits} alt="Maçã" name='Hortifrutas' href='hortifruti'/>
                     <CategoriesIcon image={pets} alt="Pata de cachorro" name='Pets' />
                     <CategoriesIcon image={bebidas} alt="Garrafa" name='Bebidas' />
                     <CategoriesIcon image={acougue} alt="Carne" name='Açougue' />
                     <CategoriesIcon image={laticinios} alt="Fatia de queijo" name='Laticínios' />
                     <CategoriesIcon image={variedades} alt="Dois balões" name='Variedades'/>
-                    <CategoriesIcon image={temperos} alt="Tempero sendo jogado na panela" name='Temperos' />
+                    <CategoriesIcon image={temperos} alt="Tempero sendo jogado na panela" name='Temperos' href='temperos' />
                     <CategoriesIcon image={descartaveis} alt="Duas sacolas de papel" name='Descartáveis' />
                     <CategoriesIcon image={vestuario} alt="Uma blusa feminina" name='Vestuário' />
                     <CategoriesIcon image={alimentacao} alt="Um prato e dois talheres" name='Alimentação' />

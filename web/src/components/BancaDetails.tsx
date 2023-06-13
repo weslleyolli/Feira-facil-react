@@ -9,7 +9,7 @@ import LogoClose from "../assets/banca/bancaProfile/LogoClose.svg";
 interface BancaProps {
   photo: StaticImageData;
   description: string;
-  nomeBanca: string;
+  nomeBanca?: string;
   avaliacaoBanca: number;
 }
 

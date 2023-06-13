@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .font-freedoka {
-    font-family: 'Freedoka', sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
+
+.banca {
+    width: 220px;
+    height: 200px;
+  }
+  
