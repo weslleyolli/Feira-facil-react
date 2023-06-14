@@ -30,7 +30,7 @@ const Banca = ({
   };
 
   return (
-    <div className="banca relative w-90vw h-196px flex items-center mx-28 mt-10">
+    <div className="relative w-90vw h-196px flex items-center mx-28 mt-10">
       <Image
         src={photo}
         alt={description}
@@ -57,7 +57,7 @@ const Banca = ({
       </p>
 
       <h4
-        className="absolute top-29 right-5 ml-auto font-freedoka font-normal text-lg text-teal-500 cursor-pointer hover:underline"
+        className="absolute top-29 right-10 ml-auto font-freedoka font-normal text-lg text-teal-500 cursor-pointer hover:underline"
         onClick={toggleMostrarInfo}
       >
         Ver mais
