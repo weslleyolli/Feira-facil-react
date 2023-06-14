@@ -9,9 +9,6 @@ import BancaPedro from "../assets/temperos/bancas/BancaPedro.svg";
 import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.svg";
 import BomTempero from "../assets/temperos/bancas/BomTempero.svg";
 
-import categoriaAvaliacao from "../assets/hortifruti/categoria-avaliacao.svg";
-import categoriaAvaliacao2 from "../assets/hortifruti/categoria-avaliacao2.svg";
-import categoriaAvaliacao3 from "../assets/hortifruti/categoria-avaliacao3.svg";
 import temperos from "../assets/categories/temperos.svg";
 
 import Header from "@/components/Header";
@@ -36,42 +33,48 @@ export default function Temperos() {
             imageSrc={BancaDuraes}
             title="Tempero Durães"
             address="R.Dep. José Tavares, 129"
-            categoryImageSrc={categoriaAvaliacao}
+            category={'Temperos'}
+            avaliacao={4.7}
           />
           
           <CategorieItem
             imageSrc={BancaCarlos}
             title="Verdinhas do Carlos"
             address="R.Dep. José Tavares, 157"
-            categoryImageSrc={categoriaAvaliacao2}
+            category={'Temperos'}
+            avaliacao={5.0}
           />
 
           <CategorieItem
             imageSrc={BancaMarcelo}
             title="Marcelo do Cheiro"
             address="R.Dep. José Tavares, 152"
-            categoryImageSrc={categoriaAvaliacao3}
+            category={'Temperos'}
+            avaliacao={4.3}
           />
 
           <CategorieItem
             imageSrc={BancaSLucas}
             title="Barraca São Lucas"
             address="R.Dep. José Tavares, 102"
-            categoryImageSrc={categoriaAvaliacao}
+            category={'Temperos'}
+            avaliacao={4.9}
           />
 
           <CategorieItem
             imageSrc={BancaPedro}
             title="Orgânicos do Pedro"
             address="R.Dep. José Tavares, 098"
-            categoryImageSrc={categoriaAvaliacao3}
+            category={'Temperos'}
+            avaliacao={4.4}
           />
 
           <CategorieItem
             imageSrc={BomTempero}
             title="Bompreço do Tempero"
             address="R.Dep. José Tavares, 130"
-            categoryImageSrc={categoriaAvaliacao}
+            category={'Temperos'}
+            avaliacao={4.8}
           />
 
           <div className="h-8"></div>
