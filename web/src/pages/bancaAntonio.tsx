@@ -27,6 +27,8 @@ export default function bancaAntonio(){
             description={'Foto da Banca'} 
             nomeBanca={'Banca do Antônio'} 
             avaliacaoBanca={4.7}
+            aboutBanca='Loja de hortifrúti com a maior diversidade de frutas, verduras e legumes de toda feira central.'
+            numberBanca={776}
             />
             <Barras/>
             <div className='w-5/6 mx-auto'>

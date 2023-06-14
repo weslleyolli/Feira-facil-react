@@ -11,6 +11,8 @@ interface BancaProps {
   description: string;
   nomeBanca?: string;
   avaliacaoBanca: number;
+  aboutBanca: string;
+  numberBanca: number;
 }
 
 const Banca = ({
@@ -18,6 +20,8 @@ const Banca = ({
   description,
   nomeBanca,
   avaliacaoBanca,
+  aboutBanca,
+  numberBanca,
 }: BancaProps) => {
   const [mostrarInfo, setMostrarInfo] = useState(false);
 
@@ -92,10 +96,10 @@ const Banca = ({
                 >
                   Sobre
                 </h1>
-                <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
-                  Loja de hortifrúti com a maior diversidade <br /> de frutas,
-                  verduras e legumes de toda feira <br /> central.
+                <p style={{ marginLeft: "12%" }} className="max-w-xs font-freedoka text-sm">
+                  {aboutBanca}
                 </p>
+
               </div>
               <div className="address">
                 <h1
@@ -110,7 +114,7 @@ const Banca = ({
                   Endereço
                 </h1>
                 <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
-                  Rua Deputado José Tavares, 766 - Centro
+                  Rua Deputado José Tavares, {numberBanca} - Centro
                 </p>
                 <p style={{ marginLeft: "12%", color: "#000" }} className="font-freedoka text-sm">
                   Campina Grande - PB
