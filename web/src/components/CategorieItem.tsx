@@ -28,7 +28,7 @@ export default function CategorieItem({
         className="banca -z-10 w-fit rounded-md shadow-xl transform hover:shadow-2xl cursor-pointer p-2 flex items-center mx-4"
       >
         <Image
-          className="bancaImg1"
+          className="max-w-xs max-h-44"
           src={imageSrc}
           alt={title}
           width={260}
