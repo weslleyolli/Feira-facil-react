@@ -29,6 +29,7 @@ export default function Temperos() {
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
           <CategorieItem
+            href="temperoDuraes"
             imageSrc={BancaDuraes}
             title="Tempero Durães"
             address="R.Dep. José Tavares, 129"

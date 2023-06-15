@@ -5,7 +5,7 @@ import '../app/globals.css';
 
 const LiProducts = (props: any) => {
   return (
-    <li className="inline-block mx-14 mt-10">
+    <li className="inline-block mx-12 mt-10">
       <div className="flex flex-col items-center">
         <div className="mb-4">
           <Image
