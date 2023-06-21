@@ -28,7 +28,7 @@ export function SignUp() {
                 </div>
                 <div className="w-full mt-7 flex flex-col gap-3">
                     <div>
-                        <p className="pl-1 font-Fredoka  text-lg">E-mail:</p>
+                        <p className="pl-1 font-Fredoka font-bold  text-lg">E-mail:</p>
                         <input
                             className="w-full h-8 rounded-md border border-gray-300 text-black pl-1"
                             id="email"
