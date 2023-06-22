@@ -42,7 +42,6 @@ export default function Mensagens() {
 
   const handleLogoSetaClick = () => {
     console.log('Imagem LogoSeta clicada!');
-  };
 
   return (
     <div>
