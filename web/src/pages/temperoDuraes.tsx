@@ -4,6 +4,8 @@ import "tailwindcss/tailwind.css";
 import bancaProfile from "../assets/temperos/itens/bancaProfileSBorda.png";
 import temperos from "../assets/temperos/temperos.jpeg";
 
+
+
 import cinnamon from "../assets/temperos/itens/canelaPo.jpeg";
 import rosemary from "../assets/temperos/itens/alecrim.jpeg";
 import greenSmell from "../assets/temperos/itens/cheiroVerde.jpeg";

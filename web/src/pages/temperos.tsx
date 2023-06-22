@@ -9,6 +9,7 @@ import BancaPedro from "../assets/temperos/bancas/BancaPedro.svg";
 import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.svg";
 import BomTempero from "../assets/temperos/bancas/BomTempero.svg";
 
+
 import temperos from "../assets/categories/temperos.svg";
 
 import Header from "@/components/Header";

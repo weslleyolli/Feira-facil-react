@@ -40,7 +40,7 @@ export default function CategorieItem({
             {address}
           </span>
           <div className="flex items-center">
-            <div className="w-24 h-7 mt-1 bg-yellow-100 flex items-center">
+            <div className="w-26 h-7 mt-1 bg-yellow-100 flex items-center">
               <p className="text-center text-gray-500 text-xxs font-freedoka font-thin">
                 Categoria: {category}
               </p>
