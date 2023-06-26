@@ -70,7 +70,53 @@ export function SignUp() {
                 </div>
                 <div>{loginMessage}</div>
             </div>
+            <div className="mt-7 space-y-3">
+              <div>
+                <p className="pl-1 font-Fredoka text-lg">E-mail:</p>
+                <input
+                  className="w-full h-8 rounded-md border border-gray-300 text-black pl-1"
+                  id="email"
+                  value={username}
+                  type="email"
+                  placeholder="email@example.com"
+                  onChange={(e) => setUsername(e.target.value)}
+                />
+              </div>
+              <div>
+                <div>
+                  <p className="pl-1 font-Fredoka text-lg">Senha</p>
+                  <input
+                    className="w-full h-8 rounded-md border border-gray-300 text-black pl-1"
+                    id="password"
+                    value={password}
+                    type="password"
+                    placeholder="**********"
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                </div>
+                <div className="text-right mt-2">
+                  <button className="text-green150 font-Fredoka" id="forget">
+                    <Link href="/redefinirSenha">Esqueceu a senha?</Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex justify-between px-2 h-10 gap-5 mt-10 space-x-2">
+              <Link href="/categories" className="bg-green150 text-white rounded-md text-center flex justify-center w-full">
+                <button onClick={handleLogin} className="w-full">
+                  <p className="font-Fredoka">Entrar</p>
+                </button>
+              </Link>
+      
+              <button className="w-full">
+                <Link href="/register">
+                  <p className="text-green150 font-Fredoka">Cadastre-se</p>
+                </Link>
+              </button>
+            </div>
+            <div>{loginMessage}</div>
+          </div>
         </div>
-    )
+      );
 }
 

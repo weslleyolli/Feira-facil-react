@@ -22,7 +22,14 @@ export default function bancaAntonio(){
         <div>
             <Header/>
             <Image src={hortifrutas} alt='Foto hortifrutas' width={1300} height={1200} className="relative mx-auto my-2 rounded-md w-5/6 -z-10"/>
-            <Banca photo={ProfileBanca} description={'Foto da Banca'} nomeBanca={'Banca do Antônio'} avaliacaoBanca={'4.7'}/>
+            <Banca 
+            photo={ProfileBanca} 
+            description={'Foto da Banca'} 
+            nomeBanca={'Banca do Antônio'} 
+            avaliacaoBanca={4.7}
+            aboutBanca='Loja de hortifrúti com a maior diversidade de frutas, verduras e legumes de toda feira central.'
+            numberBanca={776}
+            />
             <Barras/>
             <div className='w-5/6 mx-auto'>
                 <LiProducts

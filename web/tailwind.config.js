@@ -12,6 +12,9 @@ module.exports = {
         'Fredoka': ["Fredoka","sans-serif"],
         'Baloo': ['var(--font-baloo)'],
       },
+      fontSize:{
+        xxs: '10px',
+      },
       colors:{
         green150: '#00AA95',
         green200: '#A5E887'

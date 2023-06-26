@@ -1,12 +1,28 @@
-import React from 'react';
-import Image from 'next/image';
-import { useState } from 'react';
-import LogoStar from '../assets/banca/bancaProfile/LogoStar.svg';
-import LogoClose from '../assets/banca/bancaProfile/LogoClose.svg';
+import React from "react";
+import Image, { StaticImageData } from "next/image";
+import { useState } from "react";
+import "../app/globals.css";
 
+import LogoStar from "../assets/banca/bancaProfile/LogoStar.svg";
+import LogoClose from "../assets/banca/bancaProfile/LogoClose.svg";
 
+interface BancaProps {
+  photo: StaticImageData;
+  description: string;
+  nomeBanca?: string;
+  avaliacaoBanca: number;
+  aboutBanca: string;
+  numberBanca: number;
+}
 
-const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
+const Banca = ({
+  photo,
+  description,
+  nomeBanca,
+  avaliacaoBanca,
+  aboutBanca,
+  numberBanca,
+}: BancaProps) => {
   const [mostrarInfo, setMostrarInfo] = useState(false);
 
   const toggleMostrarInfo = () => {
@@ -18,28 +34,40 @@ const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
   };
 
   return (
-    <div className="banca relative w-90vw h-196px flex items-center mx-28 mt-10">
-      <Image src={photo} alt={description} id="ProfileBanca" width={140} height={140} />
-
-      <h2 className="relative w-200px h-35px top-33 left-3 font-roboto font-normal text-xl text-black">
-        {nomeBanca || "Banca em construção"}
-      </h2>
-
+    <div className="relative w-90vw h-196px flex items-center mx-28 mt-10">
       <Image
-        src={LogoStar}
-        alt={"Avaliação"}
-        id="Avaliacao"
-        width={12}
-        height={11}
-        className="relative top-50 left-4"
+        src={photo}
+        alt={description}
+        id="ProfileBanca"
+        width={140}
+        height={140}
       />
 
-      <p className="relative w-20px h-18px top-43 left-5 font-roboto font-normal text-xs text-teal-500">
-        {avaliacaoBanca || "Banca não avaliada"}
-      </p>
+      <div className="flex ml-3">
+        <h2 className="font-freedoka font-normal text-xl text-black">
+          {nomeBanca || "Banca em construção"}
+        </h2>
+
+        <div className="flex items-center">
+          <Image
+            src={LogoStar}
+            alt={"Avaliação"}
+            id="Avaliacao"
+            width={12}
+            height={11}
+            className="ml-1.5 mt-1"
+          />
+        </div>
+
+        <p className="ml-1 mt-2 w-20px h-18px font-freedoka font-normal text-xs text-teal-500">
+          {avaliacaoBanca || "Banca não avaliada"}
+        </p>
+        
+      </div>
+
 
       <h4
-        className="absolute top-29 right-5 ml-auto font-roboto font-normal text-xl text-teal-500 cursor-pointer hover:underline"
+        className="absolute top-29 right-10 ml-auto font-freedoka font-normal text-lg text-teal-500 cursor-pointer hover:underline"
         onClick={toggleMostrarInfo}
       >
         Ver mais
@@ -54,63 +82,223 @@ const Banca = ({ photo, description, nomeBanca, avaliacaoBanca }) => {
                 id="LogoClose"
                 src={LogoClose}
                 alt="Fechar"
-                style={{ cursor: "pointer", marginLeft: "10%", marginTop: "10%" }}
+                style={{
+                  cursor: "pointer",
+                  marginLeft: "10%",
+                  marginTop: "10%",
+                }}
               />
             </div>
             <div className="info-feira">
               <div className="about">
-                <h1 style={{ fontSize: '24px', marginLeft: "8%", marginTop: "5%", color: "#acacac" }}>
+                <h1
+                  style={{
+                    fontSize: "24px",
+                    marginLeft: "8%",
+                    marginTop: "5%",
+                    color: "#acacac",
+                  }}
+                  className="font-freedoka"
+                >
                   Sobre
                 </h1>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
-                  Loja de hortifrúti com a maior diversidade <br /> de frutas, verduras e legumes de toda feira <br /> central.
+                <p
+                  style={{ marginLeft: "12%" }}
+                  className="max-w-xs font-freedoka text-sm"
+                >
+                  {aboutBanca}
                 </p>
               </div>
               <div className="address">
-                <h1 style={{ fontSize: '24px', marginLeft: "8%", marginTop: "5%", color: "#acacac" }}>
+                <h1
+                  style={{
+                    fontSize: "24px",
+                    marginLeft: "8%",
+                    marginTop: "5%",
+                    color: "#acacac",
+                  }}
+                  className="font-freedoka"
+                >
                   Endereço
                 </h1>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
-                  Rua Deputado José Taváres, 766 - Centro
+                <p
+                  style={{ marginLeft: "12%", color: "#000" }}
+                  className="font-freedoka text-sm"
+                >
+                  Rua Deputado José Tavares, {numberBanca} - Centro
                 </p>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
+                <p
+                  style={{ marginLeft: "12%", color: "#000" }}
+                  className="font-freedoka text-sm"
+                >
                   Campina Grande - PB
                 </p>
-                <p style={{ marginLeft: "12%", color: "#000" }}>
+                <p
+                  style={{ marginLeft: "12%", color: "#000" }}
+                  className="font-freedoka text-sm"
+                >
                   CEP:58465-554
                 </p>
               </div>
               <div className="hours">
-                <h1 style={{ fontSize: '24px', marginLeft: "8%", marginTop: "5%", marginBottom: "2%",  color: "#acacac" }}>
+                <h1
+                  style={{
+                    fontSize: "24px",
+                    marginLeft: "8%",
+                    marginTop: "5%",
+                    marginBottom: "2%",
+                    color: "#acacac",
+                  }}
+                  className="font-freedoka"
+                >
                   Horário
                 </h1>
-                <div className="segunda" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "10%", marginBottom: "1%" }}>Segunda-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="segunda"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "10%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Segunda-feira
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="terca" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "14%", marginBottom: "1%" }}>Terça-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="terca"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "15%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Terça-feira
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="quarta" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "12%", marginBottom: "1%" }}>Quarta-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="quarta"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "13%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Quarta-feira
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="quinta" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "12%", marginBottom: "1%" }}>Quinta-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="quinta"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "13%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Quinta-feira
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="sexta" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "14%", marginBottom: "1%" }}>Sexta-feira</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="sexta"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "15%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Sexta-feira
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="sabado" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "19%", marginBottom: "1%" }}>Sábado</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>7:00 às 15:00</p>
+                <div
+                  className="sabado"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "19%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Sábado
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    7:00 às 15:00
+                  </p>
                 </div>
-                <div className="domingo" style={{ display: "flex", flexDirection: "row" }}>
-                  <p style={{ marginLeft: "15%", marginRight: "16%", marginBottom: "1%" }}>Domingo</p>
-                  <p style={{ marginRight: "15%", marginBottom: "1%" }}>Não abre</p>
+                <div
+                  className="domingo"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
+                  <p
+                    style={{
+                      marginLeft: "15%",
+                      marginRight: "18%",
+                      marginBottom: "1%",
+                    }}
+                    className="font-freedoka text-sm"
+                  >
+                    Domingo
+                  </p>
+                  <p
+                    style={{ marginRight: "15%", marginBottom: "1%" }}
+                    className="font-freedoka text-sm"
+                  >
+                    Não abre
+                  </p>
                 </div>
               </div>
             </div>

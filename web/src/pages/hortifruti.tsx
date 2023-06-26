@@ -1,26 +1,18 @@
-import { useState } from "react";
-import Image from "next/image";
-import logoFind from "../assets/header/lupa.svg";
+// import { useState } from "react";
+// import Image from "next/image";
+import '../app/globals.css';
+
+import Header from "@/components/Header";
+
 import banca1 from "../assets/hortifruti/banca1.svg";
 import banca2 from "../assets/hortifruti/banca2.svg";
 import banca3 from "../assets/hortifruti/banca3.svg";
 import banca4 from "../assets/hortifruti/banca4.svg";
 import banca5 from "../assets/hortifruti/banca5.svg";
 import banca6 from "../assets/hortifruti/banca6.svg";
-import categoriaAvaliacao from "../assets/hortifruti/categoria-avaliacao.svg";
-import categoriaAvaliacao2 from "../assets/hortifruti/categoria-avaliacao2.svg";
-import categoriaAvaliacao3 from "../assets/hortifruti/categoria-avaliacao3.svg";
-import hortiIcon from "../assets/hortifruti/hortiIcon.svg"
-import Header from '@/components/Header';
 
 
 export default function Hortifruti() {
-  const [userInfoVisible, setUserInfoVisible] = useState(false);
-
-  const toggleUserInfo = () => {
-    setUserInfoVisible((prev) => !prev);
-  };
-
   return (
     <div className="background">
     <Header></Header>
@@ -32,7 +24,7 @@ export default function Hortifruti() {
   <a className="banca border-2 w-fit border-green150 rounded-md shadow-sm transform hover:shadow-xl p-2 cursor-pointer flex items-center mx-4" href="bancaAntonio">
     <Image className="bancaImg" src={banca1} alt="banca1" />
     <div className="ml-2 p-5">
-      <span className="font-Fredoka">Banca do Antônio</span>
+      <span className="font-extrabold ">Banca do Antônio</span>
       <span className="text-gray-500 block">R.Dep. José Taváres, 776</span>
       <Image className="cateAvaliacao1 ml-auto" src={categoriaAvaliacao} alt="categoria-avaliacao1" />
     </div>
@@ -40,7 +32,7 @@ export default function Hortifruti() {
   <div className="banca border-2 w-fit border-green150  rounded-md shadow-sm transform hover:shadow-xl  cursor-pointer  p-2 flex items-center mx-4">
     <Image className="bancaImg1" src={banca2} alt="banca2" />
     <div className="ml-2 p-5">
-      <span className="font-Fredoka">Bandejas do Orlando</span>
+      <span className="font-bold">Bandejas do Orlando</span>
       <span className="text-gray-500 block">R.Dep. José Taváres, 990</span>
       <Image className="cateAvaliacao2 ml-auto" src={categoriaAvaliacao2} alt="categoria-avaliacao2" />
     </div>
@@ -48,7 +40,7 @@ export default function Hortifruti() {
   <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl  cursor-pointer flex items-center mx-4">
     <Image className="bancaImg" src={banca3} alt="banca3" />
     <div className="ml-2 p-5">
-      <span className="font-Fredoka">Chico da Laranja</span>
+      <span className="font-bold">Chico da Laranja</span>
       <span className="text-gray-500 block">R.Dep. José Taváres, 854</span>
       <Image className="cateAvaliacao3 ml-auto" src={categoriaAvaliacao3} alt="categoria-avaliacao3" />
     </div>
@@ -56,7 +48,7 @@ export default function Hortifruti() {
   <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl cursor-pointer  flex items-center mx-4">
     <Image className="bancaImg" src={banca4} alt="banca4" />
     <div className="ml-2 p-5">
-      <span className="font-Fredoka">Barraca São Luiz</span>
+      <span className="font-bold">Barraca São Luiz</span>
       <span className="text-gray-500 block">R.Dep. José Taváres, 698</span>
       <Image className="cateAvaliacao4 ml-auto" src={categoriaAvaliacao} alt="categoria-avaliacao4" />
     </div>
@@ -64,7 +56,7 @@ export default function Hortifruti() {
   <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl  cursor-pointer flex items-center mx-4">
     <Image className="bancaImg4" src={banca5} alt="banca5" />
     <div className="ml-2 p-5">
-      <span className="font-Fredoka">Banca da Suani</span>
+      <span className="font-bold">Banca da Suani</span>
       <span className="text-gray-500 block">R.Dep. José Taváres, 887</span>
       <Image className="cateAvaliacao ml-auto" src={categoriaAvaliacao3} alt="categoria-avaliacao5" />
     </div>
@@ -72,7 +64,7 @@ export default function Hortifruti() {
   <div className="banca border-2 w-fit border-green150  rounded-md p-2 shadow-sm transform hover:shadow-xl cursor-pointer  flex items-center mx-4">
     <Image className="bancaImg5" src={banca6} alt="banca6" />
     <div className="ml-3 p-5">
-      <span className="font-Fredoka">Toim do Coentro</span>
+      <span className="font-bold">Toim do Coentro</span>
       <span className="text-gray-500 block">R.Dep. José Taváres, 655</span>
       <Image className="cateAvaliacao5 ml-auto" src={categoriaAvaliacao} alt="categoria-avaliacao6" />
     </div>
@@ -87,14 +79,14 @@ export default function Hortifruti() {
             <Image className="logoConfig" src={logoFind} alt="Configurações" />
             <p>Meus dados</p>
           </div>
-          <a href="/">
+          <a href="login.html">
             <div className="sair">
               <Image className="logoExit" src={logoFind} alt="Sair" />
               <p>Sair</p>
             </div>
           </a>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
