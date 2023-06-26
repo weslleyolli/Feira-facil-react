@@ -29,8 +29,8 @@ export default function Categories() {
                 
                     <CategoriesIcon image={hortifruits} alt="Maçã" name='Hortifrutas' href='hortifruti'/>
                     <CategoriesIcon image={pets} alt="Pata de cachorro" name='Pets' href='pets' />
-                    <CategoriesIcon image={bebidas} alt="Garrafa" name='Bebidas' />
-                    <CategoriesIcon image={acougue} alt="Carne" name='Açougue' />
+                    <CategoriesIcon image={bebidas} alt="Garrafa" name='Bebidas' href='bebidas'/>
+                    <CategoriesIcon image={acougue} alt="Carne" name='Açougue' href='acougue'/>
                     <CategoriesIcon image={laticinios} alt="Fatia de queijo" name='Laticínios' />
                     <CategoriesIcon image={variedades} alt="Dois balões" name='Variedades' href='variedades'/>
                     <CategoriesIcon image={temperos} alt="Tempero sendo jogado na panela" name='Temperos' href='temperos' />
