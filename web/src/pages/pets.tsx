@@ -3,11 +3,11 @@
 import "../app/globals.css";
 
 import ParaisoPet from "../assets/pets/lojas/ParaisoPet.svg";
-import BancaCarlos from "../assets/temperos/bancas/BancaCarlos.svg";
-import BancaMarcelo from "../assets/temperos/bancas/BancaMarcelo.svg";
-import BancaPedro from "../assets/temperos/bancas/BancaPedro.svg";
-import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.svg";
-import BomTempero from "../assets/temperos/bancas/BomTempero.svg";
+import PetShopNoda from "../assets/pets/lojas/PetShopNoda.svg";
+import Rações from "../assets/pets/lojas/Rações.svg";
+import PetFashion from "../assets/pets/lojas/PetFashion.svg";
+import MundoFish from "../assets/pets/lojas/MundoFish.svg";
+import Bichos from "../assets/pets/lojas/Bichos.svg";
 
 import pets from "../assets/categories/pets.svg";
 
@@ -37,7 +37,7 @@ export default function Pets() {
           />
 
           <CategorieItem
-            imageSrc={BancaCarlos}
+            imageSrc={PetShopNoda}
             title="PetShop do Noda"
             address="R.Dep. José Tavares, 029"
             category={"Pets"}
@@ -45,35 +45,35 @@ export default function Pets() {
           />
 
           <CategorieItem
-            imageSrc={BancaMarcelo}
+            imageSrc={Rações}
             title="Rações e Acessórios"
-            address="R.Dep. José Tavares, 152"
+            address="R.Dep. José Tavares, 166"
             category={"Pets"}
-            avaliacao={4.3}
+            avaliacao={4.0}
           />
 
           <CategorieItem
-            imageSrc={BancaSLucas}
-            title="Reino Animal"
-            address="R.Dep. José Tavares, 102"
-            category={"Pets"}
-            avaliacao={4.9}
-          />
-
-          <CategorieItem
-            imageSrc={BancaPedro}
-            title="Pet Fashion"
-            address="R.Dep. José Tavares, 098"
+            imageSrc={MundoFish}
+            title="Mundo Fish"
+            address="R.Dep. José Tavares, 104"
             category={"Pets"}
             avaliacao={4.4}
           />
 
           <CategorieItem
-            imageSrc={BomTempero}
-            title="Bichos e Cia"
-            address="R.Dep. José Tavares, 130"
+            imageSrc={PetFashion}
+            title="Pet Fashion"
+            address="R.Dep. José Tavares, 074"
             category={"Pets"}
-            avaliacao={4.8}
+            avaliacao={4.3}
+          />
+
+          <CategorieItem
+            imageSrc={Bichos}
+            title="Bichos e Cia"
+            address="R.Dep. José Tavares, 120"
+            category={"Pets"}
+            avaliacao={4.5}
           />
 
           <div className="h-8"></div>
