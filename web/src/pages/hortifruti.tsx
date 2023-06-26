@@ -2,17 +2,17 @@
 // import Image from "next/image";
 import '../app/globals.css';
 
-import Header from "@/components/Header";
 import CategorieItem from "@/components/CategorieItem";
-import LogoCategorie from '@/components/LogoCategorie'
+import Header from "@/components/Header";
+import LogoCategorie from '@/components/LogoCategorie';
 
+import hortifruits from "../assets/categories/hortifruits.svg";
 import banca1 from "../assets/hortifruti/banca1.svg";
 import banca2 from "../assets/hortifruti/banca2.svg";
 import banca3 from "../assets/hortifruti/banca3.svg";
 import banca4 from "../assets/hortifruti/banca4.svg";
 import banca5 from "../assets/hortifruti/banca5.svg";
 import banca6 from "../assets/hortifruti/banca6.svg";
-import hortifruits from "../assets/categories/hortifruits.svg";
 
 
 export default function Hortifruti() {
