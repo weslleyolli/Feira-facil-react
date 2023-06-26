@@ -9,6 +9,7 @@ import BancaPedro from "../assets/temperos/bancas/BancaPedro.svg";
 import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.svg";
 import BomTempero from "../assets/temperos/bancas/BomTempero.svg";
 
+
 import temperos from "../assets/categories/temperos.svg";
 
 import Header from "@/components/Header";
@@ -29,6 +30,7 @@ export default function Temperos() {
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
           <CategorieItem
+            href="temperoDuraes"
             imageSrc={BancaDuraes}
             title="Tempero Durães"
             address="R.Dep. José Tavares, 129"

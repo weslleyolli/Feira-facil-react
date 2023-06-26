@@ -28,7 +28,7 @@ export default function CategorieItem({
         className="banca -z-10 w-fit rounded-md shadow-xl transform hover:shadow-2xl cursor-pointer p-2 flex items-center mx-4"
       >
         <Image
-          className="bancaImg1"
+          className="max-w-xs max-h-44"
           src={imageSrc}
           alt={title}
           width={260}
@@ -40,7 +40,7 @@ export default function CategorieItem({
             {address}
           </span>
           <div className="flex items-center">
-            <div className="w-24 h-7 mt-1 bg-yellow-100 flex items-center">
+            <div className="w-26 h-7 mt-1 bg-yellow-100 flex items-center">
               <p className="text-center text-gray-500 text-xxs font-freedoka font-thin">
                 Categoria: {category}
               </p>
