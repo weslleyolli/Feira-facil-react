@@ -1,7 +1,6 @@
 'use client'
-import React, { useState } from 'react';
-import Link from 'next/link'
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useState } from 'react';
 
 const validUsername = "user123";
 const validPassword = "password123";
@@ -116,7 +115,6 @@ export function SignUp() {
             </div>
             <div>{loginMessage}</div>
           </div>
-        </div>
       );
 }
 
