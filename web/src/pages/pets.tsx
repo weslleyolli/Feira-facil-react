@@ -29,6 +29,7 @@ export default function Pets() {
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
           <CategorieItem
+            href="ParaisoPet"
             imageSrc={ParaisoPet}
             title="Paraíso Pet"
             address="R.Dep. José Tavares, 114"
