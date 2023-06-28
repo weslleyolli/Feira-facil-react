@@ -29,11 +29,12 @@ export default function Laticínios() {
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
           <CategorieItem
+            href="MundoDosLaticinios"
             imageSrc={MundoLaticinios}
             title="Mundo dos Laticínios"
             address="R.Dep. José Tavares, 126"
             category={"Laticínios"}
-            avaliacao={3.9}
+            avaliacao={4.5}
           />
 
           <CategorieItem
