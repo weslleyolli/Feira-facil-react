@@ -4,9 +4,6 @@ import "tailwindcss/tailwind.css";
 import merceariaCapa from "../assets/mercearia/merceariaCapa.jpg";
 import merceariaGarciaProfile from "../assets/mercearia/merceariaGarciaProfile.png";
 
-
-
-
 import arrozParboilizadoKiarroz from "../assets/mercearia/itensMercearia/arrozParboilizadoKiarroz.jpg";
 import cafePilao from "../assets/mercearia/itensMercearia/cafePilao.jpg";
 import detergenteYpe from "../assets/mercearia/itensMercearia/detergenteYpe.jpg";

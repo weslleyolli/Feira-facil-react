@@ -1,19 +1,19 @@
 import 'tailwindcss/tailwind.css';
 
 import CategoriesIcon from '@/components/CategoriesIcon';
-import hortifruits from '../assets/categories/hortifruits.svg'
-import pets from '../assets/categories/pets.svg'
-import bebidas from '../assets/categories/bebidas.svg'
-import acougue from '../assets/categories/acougue.svg'
-import laticinios from '../assets/categories/laticinios.svg'
-import variedades from '../assets/categories/variedades.svg'
-import temperos from '../assets/categories/temperos.svg'
-import descartaveis from '../assets/categories/descartaveis.svg'
-import vestuario from '../assets/categories/vestuario.svg'
-import alimentacao from '../assets/categories/alimentacao.svg'
-import servicos from '../assets/categories/servicos.svg'
-import mercearia from '../assets/categories/mercearia.svg'
 import Header from '@/components/Header';
+import acougue from '../assets/categories/acougue.svg';
+import alimentacao from '../assets/categories/alimentacao.svg';
+import bebidas from '../assets/categories/bebidas.svg';
+import descartaveis from '../assets/categories/descartaveis.svg';
+import hortifruits from '../assets/categories/hortifruits.svg';
+import laticinios from '../assets/categories/laticinios.svg';
+import mercearia from '../assets/categories/mercearia.svg';
+import pets from '../assets/categories/pets.svg';
+import servicos from '../assets/categories/servicos.svg';
+import temperos from '../assets/categories/temperos.svg';
+import variedades from '../assets/categories/variedades.svg';
+import vestuario from '../assets/categories/vestuario.svg';
 
 
 export default function Categories() {

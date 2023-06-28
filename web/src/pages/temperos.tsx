@@ -4,10 +4,10 @@ import "../app/globals.css";
 
 import BancaDuraes from "../assets/temperos/bancas/BancaDuraes.svg";
 import BancaCarlos from "../assets/temperos/bancas/BancaCarlos.svg";
-import BancaMarcelo from "../assets/temperos/bancas/BancaMarcelo.svg";
-import BancaPedro from "../assets/temperos/bancas/BancaPedro.svg";
-import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.svg";
-import BomTempero from "../assets/temperos/bancas/BomTempero.svg";
+import BancaMarcelo from "../assets/temperos/bancas/BancaMarcelo.jpeg";
+import BancaPedro from "../assets/temperos/bancas/BancaPedro.webp";
+import BancaSLucas from "../assets/temperos/bancas/BancaSLucas.jpeg";
+import BomTempero from "../assets/temperos/bancas/BomTempero.jpeg";
 
 
 import temperos from "../assets/categories/temperos.svg";

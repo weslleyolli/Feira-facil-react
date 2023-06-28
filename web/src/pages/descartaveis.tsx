@@ -2,12 +2,12 @@
 // import Image from "next/image";
 import "../app/globals.css";
 
-import Banca10 from "../assets/descartaveis/bancas/Banca10.svg";
-import BancaCultura from "../assets/descartaveis/bancas/BancaCultura.svg";
-import BancaDescARTE from "../assets/descartaveis/bancas/BancaDescARTE.svg";
-import ChicaoEmbalagens from "../assets/descartaveis/bancas/ChicaoEmbalagens.svg";
-import DescartaveisSu from "../assets/descartaveis/bancas/DescartaveisSu.svg";
-import IapEmbalagens from "../assets/descartaveis/bancas/IapEmbalagens.svg";
+import Banca10 from "../assets/descartaveis/bancas/Banca10.jpeg";
+import BancaCultura from "../assets/descartaveis/bancas/BancaCultura.jpeg";
+import BancaDescARTE from "../assets/descartaveis/bancas/BancaDescARTE.jpeg";
+import ChicaoEmbalagens from "../assets/descartaveis/bancas/ChicaoEmbalagens.jpeg";
+import DescartaveisSu from "../assets/descartaveis/bancas/DescartaveisSu.png";
+import IapEmbalagens from "../assets/descartaveis/bancas/IapEmbalagens.jpeg";
 
 import descartaveis from "../assets/categories/descartaveis.svg";
 
@@ -29,6 +29,7 @@ export default function Descartaveis() {
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
           <CategorieItem
+            href="Banca10"
             imageSrc={Banca10}
             title="Banca Tudo10"
             address="R.Dep. José Tavares, 337"
