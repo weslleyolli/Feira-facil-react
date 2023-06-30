@@ -27,7 +27,7 @@ export default function Header() {
               <Image className="max-w-[80%] sm:max-w-[100%] h-8" src={user} alt="Usuário" />
             </button>
             <button>
-              <Link href="/mensagens">
+              <Link href="/message">
                 <Image className="max-w-[80%] sm:max-w-[100%]" src={message} alt="Chat" />
               </Link>
             </button>

@@ -13,17 +13,17 @@ import horaH from "../assets/bebidas/bancas/horaH.svg";
 import skinaoConveniencia from "../assets/bebidas/bancas/skinaoConveniencia.svg";
 import gordinhoBebidas from "../assets/bebidas/bancas/gordinhoBebidas.svg";
 import bebidas from "../assets/categories/bebidas.svg";
+import Image from 'next/image';
 
 
 export default function Bebidas() {
   return (
     <div className="background">
       <Header></Header>
-      <LogoCategorie
-        photo={bebidas}
-        title="Garrafa"
-        name="Bebidas"
-      />
+      <div className="flex items-center justify-center mt-10 gap-5 mb-10">
+        <h1 className="text-green150 font-freedoka font-bold text-5xl">Bebidas</h1>
+        <Image className="bancaImg1" src={bebidas} alt='' width={50} height={50} />
+      </div>
       <main className=" flex items-center align-middle justify-center">
         <div className="bancasSection grid grid-cols-2 gap-4 items-center align-middle">
 
@@ -35,7 +35,7 @@ export default function Bebidas() {
             category="Bebidas"
             avaliacao={5.0}
           />
-          
+
           <CategorieItem
             href="pointDasBebidas"
             imageSrc={pointDasBebidas}
@@ -80,11 +80,11 @@ export default function Bebidas() {
             category="Bebidas"
             avaliacao={4.8}
           />
-        
 
-                
-            <div className="h-8"></div>
-          
+
+
+          <div className="h-8"></div>
+
         </div>
       </main>
     </div>
