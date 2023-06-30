@@ -35,7 +35,7 @@ export default function Categories() {
                     <CategoriesIcon image={variedades} alt="Dois balões" name='Variedades' href='variedades'/>
                     <CategoriesIcon image={temperos} alt="Tempero sendo jogado na panela" name='Temperos' href='temperos' />
                     <CategoriesIcon image={descartaveis} alt="Duas sacolas de papel" name='Descartáveis' href='descartaveis'/>
-                    <CategoriesIcon image={vestuario} alt="Uma blusa feminina" name='Vestuário' href='vesturario'/>
+                    <CategoriesIcon image={vestuario} alt="Uma blusa feminina" name='Vestuário' href='vestuario'/>
                     <CategoriesIcon image={alimentacao} alt="Um prato e dois talheres" name='Alimentação' href='alimentacao'/>
                     <CategoriesIcon image={servicos} alt="Chave de mecanico" name='Serviços' />
                     <CategoriesIcon image={mercearia} alt="Carrinho de compras" name='Mercearia' href='mercearia'/>

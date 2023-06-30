@@ -2,17 +2,17 @@
 // import Image from "next/image";
 import "../app/globals.css";
 
+import Bichos from "../assets/pets/lojas/Bichos.svg";
+import MundoFish from "../assets/pets/lojas/MundoFish.svg";
 import ParaisoPet from "../assets/pets/lojas/ParaisoPet.svg";
+import PetFashion from "../assets/pets/lojas/PetFashion.svg";
 import PetShopNoda from "../assets/pets/lojas/PetShopNoda.svg";
 import Rações from "../assets/pets/lojas/Rações.svg";
-import PetFashion from "../assets/pets/lojas/PetFashion.svg";
-import MundoFish from "../assets/pets/lojas/MundoFish.svg";
-import Bichos from "../assets/pets/lojas/Bichos.svg";
 
 import pets from "../assets/categories/pets.svg";
 
-import Header from "@/components/Header";
 import CategorieItem from "@/components/CategorieItem";
+import Header from "@/components/Header";
 import LogoCategorie from "@/components/LogoCategorie";
 
 export default function Pets() {
