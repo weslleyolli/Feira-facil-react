@@ -1,0 +1,16 @@
+{
+  "cssImports": {
+    "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\src\\app\\layout.tsx": [
+      "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Roboto_Flex\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-roboto\"}],\"variableName\":\"roboto\"}",
+      "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Fredoka\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-fredoka\"}],\"variableName\":\"fredoka\"}",
+      "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Baloo_Thambi_2\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-baloo\"}],\"variableName\":\"BalooThambi2\"}",
+      "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\src\\app\\globals.css"
+    ]
+  },
+  "cssModules": {
+    "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\src\\app\\page": [
+      "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\src\\app\\globals.css",
+      "C:\\Users\\wesll\\Projects\\Unifacisa_University\\Feira-facil-react\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\layout.tsx\",\"import\":\"Roboto_Flex\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-roboto\"}],\"variableName\":\"roboto\"}"
+    ]
+  }
+}
